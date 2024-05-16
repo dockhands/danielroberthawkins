@@ -9,6 +9,10 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+:root {
+  --gray-color: hsl(0, 0%, 75%);
+}
+
 html,
 body {
   height: 100%;
@@ -56,13 +60,106 @@ ol {
   margin: 0;
 }
 
+/*------------------------
+  ADDED by @colbyramsay css
+--------------------------*/
+
 .oblique {
     font-style: oblique;
 }
 
 .thin {
   font-weight: 100;
+  color: #979797;
 }
+
+.white-text {
+  color: white;
+  font-size: 270%;
+}
+
+.black-text {
+  color: black;
+  font-size: 270%;
+}
+
+.gray-text {
+  color: #979797;
+}
+
+.half-opacity {
+  opacity: 0.5;
+}
+
+.nav-tab-left {
+    background: none;
+    border-radius: 0 50% 50% 0;
+    border: none;
+    padding: 0;
+    transition: .18s;
+    margin: 10px;
+}
+
+.nav-tab-right {
+    background: none;
+    border-radius: 50% 0 0 50%;
+    border: none;
+    padding: 0;
+    transition: .18s;
+    margin: 10px;
+}
+
+.sticky-left {
+    position: fixed;
+    left: 0;
+    top: 50%; /* Adjust this value to position it vertically as desired */
+}
+
+.sticky-right {
+    position: fixed;
+    right: 0;
+    top: 50%; /* Adjust this value to position it vertically as desired */
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow {
+    border: solid var(--gray-color);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 12px;
+    margin: 0;
+}
+  
+.right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.left {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.up {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.down {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-links {
+    padding: 9px;
+}
+
+
 
 /*------------------------
   Helper css
